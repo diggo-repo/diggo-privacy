@@ -5,44 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diggo - Privacy Policy</title>
     <style>
-        body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.55; background: #fff; }
         h1 { color: #1a1a1a; }
-        h2 { color: #444; margin-top: 30px; }
+        h2 { color: #444; margin-top: 34px; }
+        table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; font-size: 15px; }
+        th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid #e3e3e3; }
+        th { background: #f6f6f6; }
+        .wrap { overflow-x: auto; }
+        .muted { color: #666; }
     </style>
 </head>
 <body>
     <h1>Diggo Privacy Policy</h1>
-    <p>Last updated: May 22, 2026</p>
+    <p class="muted">Last updated: November 20, 2026</p>
 
-    <h2>Information We Collect</h2>
-    <p>Diggo collects the following information when you use our app:</p>
+    <h2>1. Who we are</h2>
+    <p>Diggo is a mobile app to discover vinyl records from independent record shops, listen to previews and buy from those shops.
+    The data controller is Francesco Villa, operating diggo (“diggo”, “we”).</p>
+    <p>For any privacy question or request write to <a href="mailto:diggoadmin@gmail.com">diggoadmin@gmail.com</a>.</p>
+
+    <h2>2. What data we collect</h2>
+    <p>We collect only what the app needs to work and to improve. We do not use advertising trackers and we do not sell your data.</p>
+    <div class="wrap"><table>
+        <tr><th>Category</th><th>What exactly</th><th>Where it comes from</th></tr>
+        <tr><td>Account</td><td>Email address, username, sign-in method (email, Google or Apple). With Apple you may share a private relay address.</td><td>You, at sign-up</td></tr>
+        <tr><td>Music activity</td><td>Records you like or skip, records you remove from My Digs, your digging sessions and the filters you used (style, country, years, shops)</td><td>Your use of the app</td></tr>
+        <tr><td>Usage statistics</td><td>Events such as app opened/closed, screens viewed, sessions started and finished, records opened, how long you listened to each preview, collections opened, records added to or removed from the cart, checkouts started, feedback answers. Each event has a time, the app version and the platform (iOS/Android).</td><td>Your use of the app</td></tr>
+        <tr><td>Notifications</td><td>A device token to send you push notifications, your time zone and app version; which notifications we sent you, when you opened them and which you removed</td><td>Your device, if you allow notifications</td></tr>
+        <tr><td>Cart and purchases</td><td>Records in your cart and their shop; checkouts you start (checkout identifier, shop, total) and whether they turned into an order</td><td>Your use of the app and the shop's checkout status</td></tr>
+        <tr><td>Purchase requests to a shop</td><td>Your contact email, username, the records, delivery or pick-up preference and your note</td><td>You, when you send a request</td></tr>
+    </table></div>
+    <p>We do not collect your location, contacts, photos or payment card details. Payments happen on the record shop's own checkout page, not in diggo.</p>
+
+    <h2>3. Why we use it (purposes and legal bases)</h2>
+    <div class="wrap"><table>
+        <tr><th>Purpose</th><th>Data used</th><th>Legal basis (GDPR art. 6)</th></tr>
+        <tr><td>Create and run your account, let you dig, like, build My Digs and use the cart</td><td>Account, music activity, cart</td><td>Contract: providing the service you asked for (6.1.b)</td></tr>
+        <tr><td>Send your purchase request to a shop, or open the shop's checkout</td><td>Purchase request data, cart</td><td>Contract (6.1.b)</td></tr>
+        <tr><td>Notify you when a record you liked is back in stock or a collection you dig has new records; share shop offers</td><td>Notifications, music activity</td><td>Consent, given when you allow notifications on your device; you can turn them off at any time in your phone settings (6.1.a)</td></tr>
+        <tr><td>Understand how diggo is used and improve it; measure purchases made through diggo for the shops we work with</td><td>Usage statistics, purchases</td><td>Legitimate interest in improving the service and running it with the shops (6.1.f). You can object at any time by writing to us.</td></tr>
+        <tr><td>Keep the service secure and fix errors</td><td>Account, usage statistics</td><td>Legitimate interest (6.1.f)</td></tr>
+        <tr><td>Comply with legal obligations (e.g. tax, requests from authorities)</td><td>What the law requires</td><td>Legal obligation (6.1.c)</td></tr>
+    </table></div>
+
+    <h2>4. Who we share it with</h2>
+    <p><strong>Record shops.</strong> When you send a purchase request, the shop receives your contact email, your username, the records, your delivery or pick-up choice and your note, so it can reply to you directly and complete the sale. When you check out, you are sent to the shop's own checkout page. From that moment the shop handles your order and payment as an independent data controller under its own privacy policy. The shops are the ones shown in the app (today: Vinylminded, Italy).</p>
+    <p><strong>Common Ground.</strong> Some shops sell through the Common Ground platform. When you check out with one of them, diggo creates the checkout with the records you chose and afterwards checks only whether that checkout is still open. We do not send Common Ground your email or name; you enter your details on the shop's checkout page.</p>
+    <p><strong>Service providers</strong> (processors acting on our instructions):</p>
+    <div class="wrap"><table>
+        <tr><th>Provider</th><th>What for</th><th>Location</th></tr>
+        <tr><td>Supabase</td><td>Database, authentication, server functions</td><td>EU/US</td></tr>
+        <tr><td>Google Firebase Cloud Messaging</td><td>Push notifications</td><td>EU/US</td></tr>
+        <tr><td>Google Sign-In, Sign in with Apple</td><td>Sign-in, only if you choose them</td><td>EU/US</td></tr>
+        <tr><td>Resend</td><td>Sending emails (sign-up confirmation, purchase requests to shops)</td><td>US</td></tr>
+        <tr><td>Cloudflare</td><td>Our domain, email routing and encrypted database backups</td><td>EU/US</td></tr>
+        <tr><td>GitHub</td><td>Automated database backups (encrypted, short retention) and hosting of this page</td><td>US</td></tr>
+    </table></div>
+    <p>We may also disclose data when the law requires it. If diggo is sold or merged, your data would pass to the new owner under this policy.</p>
+
+    <h2>5. Transfers outside the EU</h2>
+    <p>Some providers above are based in the United States or may process data there. These transfers rely on the EU–US Data Privacy Framework where the provider is certified, or on the European Commission's Standard Contractual Clauses. You can ask us for a copy of the safeguards.</p>
+
+    <h2>6. How long we keep it</h2>
+    <div class="wrap"><table>
+        <tr><th>Data</th><th>How long</th></tr>
+        <tr><td>Account, likes, My Digs, sessions</td><td>Until you delete your account</td></tr>
+        <tr><td>Usage statistics</td><td>Up to 24 months, then deleted or made anonymous</td></tr>
+        <tr><td>Notification log and device token</td><td>Token: until you sign out, delete the app or your account; log: up to 12 months</td></tr>
+        <tr><td>Cart</td><td>Until you remove the records or delete your account</td></tr>
+        <tr><td>Purchases and purchase requests</td><td>As long as needed for legal, tax or dispute purposes, and no longer than 10 years</td></tr>
+        <tr><td>Encrypted backups</td><td>For a limited period, then overwritten or deleted</td></tr>
+    </table></div>
+    <p>When you delete your account we delete your profile, likes, sessions, cart and sign-in data at once. Usage statistics already collected are no longer linked to your name or email and are kept only within the period above.</p>
+
+    <h2>7. Your rights</h2>
+    <p>Under the GDPR you can ask us to:</p>
     <ul>
-        <li>Email address and username (for account creation)</li>
-        <li>Music preferences (liked and disliked records)</li>
-        <li>Session data (music discovery sessions)</li>
+        <li><strong>access</strong> your data and get a copy;</li>
+        <li><strong>correct</strong> it (you can change your username yourself in your profile);</li>
+        <li><strong>delete</strong> it: use <strong>Profile → Delete account</strong> in the app, or write to us;</li>
+        <li><strong>restrict</strong> its use or <strong>receive it in a portable format</strong>;</li>
+        <li><strong>object</strong> to its use based on legitimate interest, such as usage statistics;</li>
+        <li><strong>withdraw consent</strong> at any time (for notifications: your phone settings), without affecting what happened before.</li>
     </ul>
+    <p>Write to <a href="mailto:diggoadmin@gmail.com">diggoadmin@gmail.com</a>; we reply within one month. If you think we handle your data unlawfully, you can lodge a complaint with the Italian data protection authority, the <a href="https://www.garanteprivacy.it">Garante per la protezione dei dati personali</a>, or with the authority of the EU country where you live.</p>
 
-    <h2>How We Use Your Information</h2>
-    <p>We use your information to:</p>
-    <ul>
-        <li>Provide and improve the Diggo service</li>
-        <li>Connect you with local record shops</li>
-        <li>Send you relevant notifications about your requests</li>
-    </ul>
-
-    <h2>Third Party Services</h2>
-    <p>Diggo uses the following third-party services:</p>
-    <ul>
-        <li>Supabase (database and authentication)</li>
-        <li>Google Sign In</li>
-        <li>Apple Sign In</li>
-        <li>Firebase (push notifications)</li>
-    </ul>
-
-    <h2>Data Retention</h2>
-    <p>We retain your data as long as your account is active. You can request account deletion by emailing diggoadmin@gmail.com.</p>
+    <h2>8. Children, security, changes</h2>
+    <p><strong>Children.</strong> diggo is not meant for people under 14 years of age. If you are under that age, do not create an account.</p>
+    <p><strong>Security.</strong> Data travels encrypted (HTTPS). Access to the database is limited by per-user rules, so each account can read only its own data; backups are encrypted.</p>
+    <p><strong>Changes.</strong> If we change this policy in a meaningful way we will tell you in the app before the change applies. The date at the top shows the latest version.</p>
 
     <h2>Contact</h2>
-    <p>For privacy questions, contact us at: diggoadmin@gmail.com</p>
+    <p>Francesco Villa, operating diggo · <a href="mailto:diggoadmin@gmail.com">diggoadmin@gmail.com</a></p>
 </body>
 </html>
